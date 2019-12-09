@@ -17,7 +17,7 @@
     "start": "ng serve",
     "build": "npm run build:devices && npm run build:demo",
     "build:devices": "ng build devices",
-    "build:demo": "ng build demo --prod --deploy-url \"/devices/\"",
+    "build:demo": "ng build demo --prod --deploy-url \"https://reactgular.github.com/devices/\"",
     "test": "ng test",
     "lint": "ng lint"
   },
