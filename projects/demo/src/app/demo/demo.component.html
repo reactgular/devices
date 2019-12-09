@@ -1,0 +1,7 @@
+<div class="card ml-auto mr-auto p-3">
+    <p>Show the different observable values emitted by the devices service.</p>
+    <ng-container *ngFor="let example of examples">
+        <p class="font-weight-bold">{{example.title}}</p>
+        <pre><code>{{example.value$ | async | json}}</code></pre>
+    </ng-container>
+</div>

@@ -58,7 +58,18 @@
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
-          "style": "scss"
+          "styleext": "scss",
+          "changeDetection": "OnPush",
+          "flat": false
+        },
+        "@schematics/angular:pipe": {
+          "flat": false
+        },
+        "@schematics/angular:directive": {
+          "flat": false
+        },
+        "@schematics/angular:service": {
+          "flat": false
         }
       },
       "root": "projects/demo",

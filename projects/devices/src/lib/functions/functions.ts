@@ -1,4 +1,4 @@
-import {RgLayoutState} from '../rg-devices.type';
+import {LayoutState} from '../devices.type';
 import {Observable} from 'rxjs';
 import {distinctUntilChanged, map} from 'rxjs/operators';
 
@@ -16,12 +16,12 @@ export const first = <TType>(values: TType[]): TType => values.length === 0 ? un
 /**
  * Compares two state objects to see if they contain the same values.
  */
-export const isStateSame = (a: RgLayoutState, b: RgLayoutState) => a.device === b.device && a.orientation === b.orientation;
+export const isStateSame = (a: LayoutState, b: LayoutState) => a.device === b.device && a.orientation === b.orientation;
 
 /**
  * A simply selector function for a state observable.
  */
-export const selectState = <TType>(state: Observable<RgLayoutState>, func: (state: RgLayoutState) => TType): Observable<TType> =>
+export const selectState = <TType>(state: Observable<LayoutState>, func: (state: LayoutState) => TType): Observable<TType> =>
   state.pipe(
     map(func),
     distinctUntilChanged()

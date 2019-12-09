@@ -1,3 +1,3 @@
-export * from './lib/rg-devices.module';
-export * from './lib/rg-devices.type';
-export * from './lib/rg-devices/rg-devices.service';
+export * from './lib/devices.module';
+export * from './lib/devices.type';
+export * from './lib/devices/devices.service';
