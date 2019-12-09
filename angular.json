@@ -1,0 +1,59 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "devices": {
+      "projectType": "library",
+      "schematics": {
+        "@schematics/angular:component": {
+          "styleext": "scss",
+          "changeDetection": "OnPush",
+          "flat": false
+        },
+        "@schematics/angular:pipe": {
+          "flat": false
+        },
+        "@schematics/angular:directive": {
+          "flat": false
+        },
+        "@schematics/angular:service": {
+          "flat": false
+        }
+      },
+      "root": "projects/devices",
+      "sourceRoot": "projects/devices/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/devices/tsconfig.lib.json",
+            "project": "projects/devices/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/devices/src/test.ts",
+            "tsConfig": "projects/devices/tsconfig.spec.json",
+            "karmaConfig": "projects/devices/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/devices/tsconfig.lib.json",
+              "projects/devices/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "devices"
+}
