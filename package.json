@@ -1,6 +1,6 @@
 {
   "name": "@reactgular/devices",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "Angular library that simplifies working with desktop, tablet and mobile devices.",
   "author": "reactgular.com",
   "homepage": "https://reactgular.com/",
@@ -37,14 +37,14 @@
     "zone.js": "~0.10.2"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "~0.803.20",
+    "@angular-devkit/build-angular": "^0.803.23",
     "@angular-devkit/build-ng-packagr": "~0.803.20",
     "@angular/cli": "~8.3.20",
     "@angular/compiler-cli": "~8.2.14",
     "@angular/language-service": "~8.2.14",
-    "@types/node": "~12.12.15",
     "@types/jasmine": "~3.5.0",
     "@types/jasminewd2": "~2.0.8",
+    "@types/node": "~12.12.15",
     "codelyzer": "^5.2.0",
     "jasmine-core": "~3.5.0",
     "jasmine-spec-reporter": "~4.2.1",
