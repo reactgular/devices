@@ -1,5 +1,5 @@
-[![Build Status](https://travis-ci.org/reactgular/devices.svg?branch=master)](https://travis-ci.org/reactgular/devices)
-[![Coverage Status](https://coveralls.io/repos/github/reactgular/devices/badge.svg?branch=master)](https://coveralls.io/github/reactgular/devices?branch=master)
+[![Build Status](https://travis-ci.org/reactgular/devices.svg?branch=develop)](https://travis-ci.org/reactgular/devices)
+[![Coverage Status](https://coveralls.io/repos/github/reactgular/devices/badge.svg?branch=develop)](https://coveralls.io/github/reactgular/devices?branch=develop)
 [![npm version](https://badge.fury.io/js/%40reactgular%2Fdevices.svg)](https://badge.fury.io/js/%40reactgular%2Fdevices)
 
 # Devices
@@ -10,7 +10,7 @@ utility provided by the Angular Material CDK library.
 ## Overview
 
 Angular Material CDK library provides a `BreakpointObserver` utility
-that emits state changes based upon screen and orientation of
+which emits state changes based upon screen and orientation of
 the web browser. The problem with this library is that the matching 
 rules are broad in scope, and most developers just want to
 know what device the user is using.
@@ -20,14 +20,13 @@ screen sizes and orientation.
 
 # Install
 
-You need to have an Angular project with the supported Angular version. 
-This project was last updated to work with Angular 8.
+To get started, install the package from npm. 
 
 ```bash
-npm install --save @reactgular/devices
+npm install @reactgular/devices
 ```
 
-Once installed you need to import the devices module into your project.
+Once installed you need to import the `DevicesModule` module into your project.
 
 ```typescript
 import {DevicesModule} from '@reactgular/devices';
