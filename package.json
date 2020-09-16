@@ -16,7 +16,7 @@
     "ng": "ng",
     "start": "ng serve --watch --open",
     "build": "npm run build:devices && npm run build:demo",
-    "build:devices": "ng build devices",
+    "build:devices": "ng build devices --prod",
     "build:devices:watch": "ng build devices --watch",
     "build:demo": "ng build demo --prod --deploy-url \"https://reactgular.github.io/devices/\"",
     "beta": "npm run lint && npm run build && cd dist/devices && npm publish --tag beta",
