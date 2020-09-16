@@ -16,13 +16,12 @@
     "ng": "ng",
     "start": "ng serve --watch --open",
     "build": "npm run build:devices && npm run build:demo",
-    "build:devices": "ng build devices --prod",
+    "build:devices": "ng build devices --prod && cp README.md dist/devices",
     "build:devices:watch": "ng build devices --watch",
     "build:demo": "ng build demo --prod --deploy-url \"https://reactgular.github.io/devices/\"",
     "beta": "npm run lint && npm run build && cd dist/devices && npm publish --tag beta",
     "test": "ng test",
-    "lint": "ng lint",
-    "postbuild": "cp README.md dist/devices"
+    "lint": "ng lint"
   },
   "private": true,
   "dependencies": {
