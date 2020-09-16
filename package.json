@@ -33,7 +33,6 @@
     "@angular/core": "~8.2.14",
     "@angular/platform-browser": "~8.2.14",
     "@angular/platform-browser-dynamic": "~8.2.14",
-    "bootstrap": "^4.4.1",
     "rxjs": "~6.5.3",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"
@@ -47,6 +46,7 @@
     "@types/jasmine": "~3.5.0",
     "@types/jasminewd2": "~2.0.8",
     "@types/node": "~12.12.15",
+    "bootstrap": "^4.4.1",
     "codelyzer": "^5.2.0",
     "jasmine-core": "~3.5.0",
     "jasmine-spec-reporter": "~4.2.1",
